@@ -26,6 +26,6 @@ contract Interaction {
     }
 
     function checkBal(address _addr) public view returns (uint) {
-        return INumber (numberContractAddress).getUserBal(_addr);
+        return INumber(numberContractAddress).getUserBal(_addr);
     }
 }
