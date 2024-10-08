@@ -114,11 +114,11 @@
 	},
 	"sources": {
 		"contracts/Chicken.sol": {
-			"keccak256": "0x92cef5e791f2ee1847b52393eb56b975334c8527a0c8b7dcd97327c387f18cfa",
+			"keccak256": "0x0e0a79875be7d8bd243c4795d0a9477bbb2ecff8546edc16cdeb00124194abfb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ef30f6c07824e9b94465f4783d942f3bd964fd44e7f29ff5a1404d35dcb9faf5",
-				"dweb:/ipfs/QmehWGJQhrBM6CyNjZPuHPH6w2hoML4BVbi7kPKDwQHZoH"
+				"bzz-raw://fa01a20d62c9e0fc24062eae17cadfc87a98f6c35f39044c9b069c0d737278af",
+				"dweb:/ipfs/QmcKFG4ZJ6N635BtcSuH1RxSFiDx5gNutKRpaoJn2R5hcN"
 			]
 		}
 	},

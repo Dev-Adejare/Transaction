@@ -1,0 +1,307 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getBasePrices",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "basePrice",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct BaseStore.BaseItem[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getIkoroduPrices",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "basePrice",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "ikoroduPrice",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct IkoroduStore.IkoroduItem[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getMainlandPrices",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "basePrice",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "ikoroduPrice",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "mainlandPrice",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct MainlandStore.MainlandItem[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getVIPrices",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "basePrice",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "ikoroduPrice",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "mainlandPrice",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "viPrice",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct VIStore.VIItem[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "ikoroduItems",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "basePrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ikoroduPrice",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "items",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "basePrice",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "mainlandItems",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "basePrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ikoroduPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "mainlandPrice",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "viItems",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "basePrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ikoroduPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "mainlandPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "viPrice",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Ass.sol": "VIStore"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Ass.sol": {
+			"keccak256": "0x2546ed4ef26b89fb92fa4fd395caee4d90484dea36eedd89aa45d78bdde67ee4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://98a70093d1512d0999e5322e62e4ba73ae9c76b3545b7838a9044b82c074c85b",
+				"dweb:/ipfs/QmPYjDw3V4z7XnJ149k31B9bX6QqC9TfDw5osNp63iWXc4"
+			]
+		}
+	},
+	"version": 1
+}

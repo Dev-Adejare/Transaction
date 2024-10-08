@@ -2,10 +2,10 @@
 pragma solidity ^0.8.26;
 
 contract BaseStore {
-    uint public plateOfRicePrice = 100;  
-    uint public tableWaterPrice = 50;    
-    uint public burgerPrice = 200;       
-    uint public sharwamaPrice = 300;     
+    uint public plateOfRicePrice = 100;
+    uint public tableWaterPrice = 50;
+    uint public burgerPrice = 200;
+    uint public sharwamaPrice = 300;
 
     function getPrices() public view virtual returns (uint, uint, uint, uint) {
         return (
@@ -39,13 +39,17 @@ contract MainlandStore is IkoroduStore {
     }
 }
 
-contract VictoriaIslandStore is MainlandStore { 
-    function getPrices() public view override returns (uint, uint, uint, uint) {
+contract VictoriaIslandStore is BaseStore, IkoroduStore, MainlandStore {
+
+    function getPrices() public view override (BaseStore, IkoroduStore, MainlandStore) returns (uint, uint, uint, uint) {
+
+        (uint ricePrice, uint waterPrice, uint burgerPrice, uint sharwamaPrice) = MainlandStore.getPrices();
+        
         return (
-            plateOfRicePrice * 25,
-            tableWaterPrice * 25,
-            burgerPrice * 25,
-            sharwamaPrice * 25
+            ricePrice *= 25,
+            waterPrice *= 25,
+            burgerPrice *= 25,
+            sharwamaPrice *= 25
         );
     }
 }
