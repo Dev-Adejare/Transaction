@@ -28,14 +28,17 @@ contract IkoroduStore is BaseStore {
     }
 }
 
-contract MainlandStore is IkoroduStore {
-    function getPrices() public view virtual override returns (uint, uint, uint, uint) {
+contract MainlandStore is BaseStore, IkoroduStore {
+    function getPrices() public view virtual override(BaseStore, IkoroduStore) returns (uint, uint, uint, uint) {
         return (
             plateOfRicePrice * 15,
             tableWaterPrice * 15,
             burgerPrice * 15,
             sharwamaPrice * 15
         );
+    }
+    function getIkoroduPrices() public view virtual  returns (uint, uint, uint, uint) {
+        return super.getPrices();
     }
 }
 
@@ -51,5 +54,9 @@ contract VictoriaIslandStore is BaseStore, IkoroduStore, MainlandStore {
             burgerPrice *= 25,
             sharwamaPrice *= 25
         );
+    }
+
+    function getMainlandPrices() public view virtual  returns (uint, uint, uint, uint) {
+        return super.getPrices();
     }
 }
