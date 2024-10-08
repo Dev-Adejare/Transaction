@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Chicken.sol": "ChickenRepublic"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Chicken.sol": {
+			"keccak256": "0x170864d189a01f0fc314c344572717eb486a9ba8ea75309be2e29f33d4403d31",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://93a9e410564f99f9a82fe1a8313c8c8a9c7b89005379efb7d9d9916a2b3d63be",
+				"dweb:/ipfs/Qmf85GvEGox15jryfe273ZUHwZwDakSeQf14TJ8KSdr5kv"
+			]
+		}
+	},
+	"version": 1
+}

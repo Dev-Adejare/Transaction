@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Chicken.sol": "VictoriaIsland"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Chicken.sol": {
+			"keccak256": "0x53cfe6746be26543c93ed74afe35180a2e2200e2062fc77a363969fc792de434",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://df4db1cc70b786f9a84a2d6d8aebb6953e4c9f785eba1995069cea7b719e22be",
+				"dweb:/ipfs/QmV1qrrtrnsy9kuuws1MBL31GzFRa2o6oSg1NLS2EwP3Jv"
+			]
+		}
+	},
+	"version": 1
+}
