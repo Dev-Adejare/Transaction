@@ -8,7 +8,8 @@ contract SimpleStorage {
         vaultNumber = _num;
         return true;
     }
-
+    
+    //Getter function which returns all the argument we pass in the function
     function getNum() public view returns (uint32 num_, uint32 vatN_) {
         num_ = vaultNumber;
         uint32 vat = 50;
