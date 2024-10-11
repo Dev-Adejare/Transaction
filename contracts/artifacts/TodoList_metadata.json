@@ -242,7 +242,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			".states/Todo.sol": "TodoList"
+			"contracts/Todo.sol": "TodoList"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -256,7 +256,7 @@
 		"remappings": []
 	},
 	"sources": {
-		".states/Todo.sol": {
+		"contracts/Todo.sol": {
 			"keccak256": "0x42e5e83707bbdbdea61188192ef81e547af8e9c63243015464c9474aa293ee97",
 			"license": "MIT",
 			"urls": [

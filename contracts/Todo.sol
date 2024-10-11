@@ -101,6 +101,50 @@
 //     mytodo.status = Status.Edited;
 // }
 
+// function getTodo(uint8 _index) external view validAddress returns (string memory, string memory, Status) {
+//     // Ensure the index is within the valid range of the "todos" array.
+//     require(_index < todos.length, "Index is out-of-bound");
+
+//     // Retrieve the todo at the specified index from the "todos" array.
+//     Todo memory mytodo = todos[_index];
+
+//     // Return the title, description, and status of the retrieved todo.
+
+
+//     return (mytodo.title, mytodo.description, mytodo.status);
+// }
+// function getAllTodo() external view validAddress returns (Todo[] memory) {
+//     // Return the entire "todos" array stored in the contract.
+//     return todos;
+// }
+// function todoCompleted(uint8 _index) external onlyOwner validAddress returns (bool) {
+//     // Ensure the index is within the valid range of the "todos" array.
+//     require(_index < todos.length, "Index is out-of-bound");
+
+//     // Access the todo at the specified index from the "todos" array in storage.
+//     Todo storage mytodo = todos[_index];
+
+//     // Update the status of the todo to "Status.Done" (completed).
+//     mytodo.status = Status.Done;
+
+//     // Return true to indicate the status update was successful.
+//     return true;
+// }
+// function deleteTodo(uint8 _index) external onlyOwner validAddress {
+//     // Ensure the index is within the valid range of the "todos" array.
+//     require(_index < todos.length, "Index is out-of-bound");
+
+//     // Replace the todo at "_index" with the last todo in the array.
+//     todos[_index] = todos[todos.length - 1];
+
+//     // Remove the last todo from the array (since it was moved).
+//     todos.pop();
+// }
+
+
+
+
+
 
 // }
 

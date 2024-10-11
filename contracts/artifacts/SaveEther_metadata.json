@@ -11,8 +11,40 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_duration",
+						"type": "uint256"
+					}
+				],
+				"name": "depositEther",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
-				"name": "VAT",
+				"name": "getContractBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -24,40 +56,15 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "getDeopositInfo",
+				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "_num",
+						"name": "",
 						"type": "uint256"
 					},
 					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "addAmount",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "getUserBal",
-				"outputs": [
-					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
@@ -68,15 +75,22 @@
 			},
 			{
 				"inputs": [],
-				"name": "getVatValue",
+				"name": "owner",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdrawEther",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -93,7 +107,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Num.sol": "Number"
+			"contracts/SaveEther.sol": "SaveEther"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -107,12 +121,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Num.sol": {
-			"keccak256": "0xd4e87d3b34239db36f46c2ba383a6306286317566e334af3619586773ccf684a",
+		"contracts/SaveEther.sol": {
+			"keccak256": "0x81b2cf2278b616f9e5ef17728c4727b43a54e12730652bac8a8c6e85f81b51ae",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://019de6f2d379efbcbde1c7b607af444fce243c887841d1117f20983f7f26fbaa",
-				"dweb:/ipfs/QmUSLPqddhX87uzBbLA9USD3U9Mdrb44PDyQ6TTR72kKtq"
+				"bzz-raw://71d071b3d755ef900725069c6f101f183ccea3d74b3b8d6dacbb90dc1e1286e9",
+				"dweb:/ipfs/QmcNhXUhHnTrk6DV3vQQ2STTDD7Z6wAihD66sCePWoXhd6"
 			]
 		}
 	},
