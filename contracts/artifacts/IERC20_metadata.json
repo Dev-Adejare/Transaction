@@ -6,22 +6,6 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_symbol",
-						"type": "string"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -39,7 +23,7 @@
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "value",
 						"type": "uint256"
 					}
 				],
@@ -52,19 +36,19 @@
 					{
 						"indexed": true,
 						"internalType": "address",
-						"name": "sender",
+						"name": "from",
 						"type": "address"
 					},
 					{
 						"indexed": true,
 						"internalType": "address",
-						"name": "reciever",
+						"name": "to",
 						"type": "address"
 					},
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "value",
 						"type": "uint256"
 					}
 				],
@@ -75,12 +59,12 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_owner",
+						"name": "owner",
 						"type": "address"
 					},
 					{
 						"internalType": "address",
-						"name": "_delegate",
+						"name": "spender",
 						"type": "address"
 					}
 				],
@@ -99,17 +83,23 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_delegate",
+						"name": "spender",
 						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_amountOfToken",
+						"name": "value",
 						"type": "uint256"
 					}
 				],
 				"name": "approve",
-				"outputs": [],
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
@@ -117,7 +107,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_address",
+						"name": "account",
 						"type": "address"
 					}
 				],
@@ -134,46 +124,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "decimal",
-				"outputs": [
-					{
-						"internalType": "uint8",
-						"name": "",
-						"type": "uint8"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getSymbol",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getTokenName",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getTotalSupply",
+				"name": "totalSupply",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -188,17 +139,23 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_reciever",
+						"name": "to",
 						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_amountOfToken",
+						"name": "value",
 						"type": "uint256"
 					}
 				],
 				"name": "transfer",
-				"outputs": [],
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
@@ -206,22 +163,28 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_owner",
+						"name": "from",
 						"type": "address"
 					},
 					{
 						"internalType": "address",
-						"name": "_buyer",
+						"name": "to",
 						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_amountOfToken",
+						"name": "value",
 						"type": "uint256"
 					}
 				],
 				"name": "transferFrom",
-				"outputs": [],
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -239,7 +202,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ERC20.sol": "DLToken"
+			"contracts/ICelo.sol": "IERC20"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -253,12 +216,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ERC20.sol": {
-			"keccak256": "0xd4f4dafed6a809a12c4b30a505b8ab236c189fd77a3d3203aea27085c74929c6",
+		"contracts/ICelo.sol": {
+			"keccak256": "0x9a0141565af3473d6b24c4b104d7c90acd5f0295866d61c8983aeefe6b7437f3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e1b3aae400d17e9b1b8b14e8a681e957b9e60c2fdab2f8d759641dfccb8ea452",
-				"dweb:/ipfs/QmaipmwL5AfpVFXoVyKPDBSnBRbdoivhdm3mUUvv4zSxb8"
+				"bzz-raw://17fc1d8b286980f6c97758b88dadedc36f3bb404df759531fa95f6c046dd7cca",
+				"dweb:/ipfs/QmRscwyBfaFQaSjLujCkT6cQ7aitUyuMxNLP3pSXA9q3Dm"
 			]
 		}
 	},
