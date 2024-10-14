@@ -647,11 +647,11 @@
 			]
 		},
 		"contracts/Celo.sol": {
-			"keccak256": "0x779b08e852c84d2940c7f946be8202deee3d5fc49464dd1ba2a7a722527ee302",
+			"keccak256": "0x5c22b2bfdd637c4beb15189b07ee0253c55185781b86f89b2c1f890976ad8133",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4f952f335c0f786289d230c024e86cbac3d1a23e79cdcfdd2488077dcaf2e5cb",
-				"dweb:/ipfs/QmXDVdgkKHsMMcANi6m3HnBjRyW23CXUZrWcg5uVzozUrQ"
+				"bzz-raw://8c7b71ef57c525287b064f52dddff3016d21b9c99e9c290771236f366461ce05",
+				"dweb:/ipfs/QmZrweHFKqGpYv2hFTfWKdiLHz4igTDrcCmtMgRvMvKoSy"
 			]
 		}
 	},
