@@ -14,7 +14,7 @@ contract ProposalVote {
         PropsStatus status;
     }
 
-    mapping(address voter => mapping(uint8 indexOfProps => bool)) hasVoted;
+    mapping(address voter => ) user;
 
     Proposal[] public proposals;
     // Proposal[] public approvedPropasal;

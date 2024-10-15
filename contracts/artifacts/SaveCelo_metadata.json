@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.28+commit.7893614a"
+		"version": "0.8.27+commit.40a35a09"
 	},
 	"language": "Solidity",
 	"output": {
@@ -167,11 +167,11 @@
 			]
 		},
 		"contracts/SaveCelo.sol": {
-			"keccak256": "0x8c0a5c574fd9c5d76b769ea808a447094c709cc56ae250d1c46924647b012d9c",
+			"keccak256": "0x41cd4ff2348695188e6245916e00b40451408a1d39ae57e33a24c5229a47d404",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ceab35e2fd39124dbd39a8302b78b55be79bacd74fea2c8bf67f6018b4628507",
-				"dweb:/ipfs/QmPWdkyFWu9oByMW82QKNKYnnhAaTonARxDUfLfn7dZSjo"
+				"bzz-raw://8f3bdbfeda1c429e7511b3740622a23642eb14ca2b3e4d99fe9c9d50d2266bb5",
+				"dweb:/ipfs/QmQjeuBoCoc5NVnwU23oLJt1AvZECuoC8Krm1Rtarh4TXZ"
 			]
 		}
 	},

@@ -25,7 +25,6 @@ contract SaveCelo{
         owner = msg.sender;
     }
 
-    //modifiers
     modifier reentrancyGuard() {
         require(!locked, "Not allowed to re-enter");
 
