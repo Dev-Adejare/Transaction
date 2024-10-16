@@ -140,9 +140,9 @@ contract stakeXFI{
     function calculateReward(uint256 _startTime, uint256 _endTime, uint256 _amount) private pure returns(uint256){
         uint256 stakeDuration = _endTime - _startTime;
 
-        uint256 totalReward = ( REWARD_PER_SECOND * _amount * stakeDuration) / 10e11;   
+        uint256 rewardPerSecond = _amount / 1000000;  
 
-        return totalReward;
+        return stakeDuration * rewardPerSecond;
 
 
     }
