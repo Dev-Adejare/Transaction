@@ -576,7 +576,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/IERC20.sol": "CeloToken"
+			"contracts/IERC20.sol": "ERCToken"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -647,11 +647,11 @@
 			]
 		},
 		"contracts/IERC20.sol": {
-			"keccak256": "0x5c22b2bfdd637c4beb15189b07ee0253c55185781b86f89b2c1f890976ad8133",
+			"keccak256": "0x8b81334e021233e555313588744c88406ea20e2d144a9dcb9f3fe4d9717b0f1b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8c7b71ef57c525287b064f52dddff3016d21b9c99e9c290771236f366461ce05",
-				"dweb:/ipfs/QmZrweHFKqGpYv2hFTfWKdiLHz4igTDrcCmtMgRvMvKoSy"
+				"bzz-raw://3864a8bcda09454d84d12c019c2330d2a7c3da0128f52a1dde6590631838f217",
+				"dweb:/ipfs/Qmf4FCAVmfQQ9RbtpA2H1LZ3fzbpSBtpS8kpRYydSnQzTu"
 			]
 		}
 	},

@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.27+commit.40a35a09"
+		"version": "0.8.28+commit.7893614a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -576,7 +576,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/IERC20.sol": "CeloToken"
+			"contracts/MPX.sol": "MPToken"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -646,12 +646,12 @@
 				"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF"
 			]
 		},
-		"contracts/IERC20.sol": {
-			"keccak256": "0x5c22b2bfdd637c4beb15189b07ee0253c55185781b86f89b2c1f890976ad8133",
+		"contracts/MPX.sol": {
+			"keccak256": "0x00c2752d495b65b6958e792a9b04ca66bc2e4094eda22c5f31227770e67fa7bc",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8c7b71ef57c525287b064f52dddff3016d21b9c99e9c290771236f366461ce05",
-				"dweb:/ipfs/QmZrweHFKqGpYv2hFTfWKdiLHz4igTDrcCmtMgRvMvKoSy"
+				"bzz-raw://80d08c4e536711892e16e1d780c7977e957806dab500884e7df23db616827e14",
+				"dweb:/ipfs/QmRkdNXNbLsZ1giniiPjqtQhyvXDa8DTeB5iziAobuPchg"
 			]
 		}
 	},
