@@ -17,7 +17,7 @@ contract stakeXFI{
 
     uint32 constant REWARD_PER_SECOND = 1_000_000; //0.000001%
 
-    struct Staker{
+    struct Staking{
         uint256 amount;
         uint256 startTime;
         uint256 duration;
@@ -25,7 +25,7 @@ contract stakeXFI{
         bool hasWithdraw;
     }
 
-    mapping (address => Staker[]) stakers;
+    mapping (address => Staking[]) stakers;
 
     constructor(address _xfiAddress, address _mpxAddress){
         XFIContract = IERC20(_xfiAddress);
@@ -50,4 +50,16 @@ contract stakeXFI{
         locked = false;
     }
 
+    function stake(uint256 _amount, uint256 _duration) external reentrancyGuard {
+        require(msg.sender != address(0), "Zero address not allowed");
+
+        require(_amount >= MINIMUM_STAKE_AMOUNT && _amount <= MAXIMUM_STAKE_AMOUNT, "Amount is out of range");
+
+        require(_duration > 0, "Duration is too short");
+
+        require(XFIContract.balanceOf(msg.sender) >= _amount, "You don't have enough");
+
+        require(XFIContract.allowance(msg.sender, address(this)) >= _amount, "Amount allowed is not enough");
+    }
+ 
 }

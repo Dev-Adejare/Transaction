@@ -115,6 +115,24 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_duration",
+						"type": "uint256"
+					}
+				],
+				"name": "stake",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -153,11 +171,11 @@
 			]
 		},
 		"contracts/Stake.sol": {
-			"keccak256": "0x221d9d47df5d322a1c2efb97b68bfb7c6c02a48cba4999ee5907754452969842",
+			"keccak256": "0x0c00c44a9a16cb17053829861ee82037772adfffe4789c44ac88e90fb4c5bb74",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0787f99a13927376904ef993e68e42b8486bff56c11bf64c484b7cbd65fd61e1",
-				"dweb:/ipfs/Qmdn1ApbrDew35dnwNVatEEULYxEvJPPse4nawfHVZ5eLq"
+				"bzz-raw://3dbf0d190b5cf3226d7be4e761c878da89e40e0d19d032a6d9f29a53b5297289",
+				"dweb:/ipfs/QmYS6HasC5wYWYJyYzQPfmMDEbd967zku7pTEecxSPY8Bp"
 			]
 		}
 	},
