@@ -6,6 +6,91 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_xfiAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_mpxAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "staker",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "startTime",
+						"type": "uint256"
+					}
+				],
+				"name": "DepositSuccessful",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransfered",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "staker",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "duration",
+						"type": "uint256"
+					}
+				],
+				"name": "WithdrawalSuccessful",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "MPXContract",
 				"outputs": [
@@ -68,11 +153,11 @@
 			]
 		},
 		"contracts/Stake.sol": {
-			"keccak256": "0xc8bfb9163978e6f6ea503246c1a63aac5318ec0c89355a71290c8b7f087c7929",
+			"keccak256": "0x221d9d47df5d322a1c2efb97b68bfb7c6c02a48cba4999ee5907754452969842",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3c460204b5a3e2515565d793f0d8047fb3942a83b73f0c5d7b7b72b961fba800",
-				"dweb:/ipfs/QmUHHBT172WUvweV17UMzwtPfovHBu2t9iLaazZDiYC79C"
+				"bzz-raw://0787f99a13927376904ef993e68e42b8486bff56c11bf64c484b7cbd65fd61e1",
+				"dweb:/ipfs/Qmdn1ApbrDew35dnwNVatEEULYxEvJPPse4nawfHVZ5eLq"
 			]
 		}
 	},
