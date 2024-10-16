@@ -83,7 +83,7 @@
 					{
 						"indexed": true,
 						"internalType": "uint256",
-						"name": "duration",
+						"name": "reward",
 						"type": "uint256"
 					}
 				],
@@ -117,6 +117,85 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "claimOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getContractMPXBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getContractXFIBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_index",
+						"type": "uint8"
+					}
+				],
+				"name": "getStakerInfo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "startTime",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "duration",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "reward",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "hasWithdraw",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct stakeXFI.Staking",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -131,6 +210,38 @@
 				],
 				"name": "stake",
 				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawStake",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -171,11 +282,11 @@
 			]
 		},
 		"contracts/Stake.sol": {
-			"keccak256": "0x0c00c44a9a16cb17053829861ee82037772adfffe4789c44ac88e90fb4c5bb74",
+			"keccak256": "0x64590f7956313ec38fd8dd073f0fe2434adf56e1832febc758f491450d442f0f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3dbf0d190b5cf3226d7be4e761c878da89e40e0d19d032a6d9f29a53b5297289",
-				"dweb:/ipfs/QmYS6HasC5wYWYJyYzQPfmMDEbd967zku7pTEecxSPY8Bp"
+				"bzz-raw://a2ba1e140848151f9328c1a26b90708a18f6169c591748e93057a1b986cb82a7",
+				"dweb:/ipfs/QmU6aBDadffPTtvP2wcQ2L5heogxVWyomD2AiBpDdMsd3W"
 			]
 		}
 	},
