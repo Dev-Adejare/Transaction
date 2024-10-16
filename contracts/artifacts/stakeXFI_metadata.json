@@ -177,11 +177,6 @@
 								"type": "uint256"
 							},
 							{
-								"internalType": "uint256",
-								"name": "reward",
-								"type": "uint256"
-							},
-							{
 								"internalType": "bool",
 								"name": "hasWithdraw",
 								"type": "bool"
@@ -282,11 +277,11 @@
 			]
 		},
 		"contracts/Stake.sol": {
-			"keccak256": "0x64590f7956313ec38fd8dd073f0fe2434adf56e1832febc758f491450d442f0f",
+			"keccak256": "0x506b6f1d77d311dc84ad3ab71ef88cac665459edcffac0b270082134ee6c9456",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a2ba1e140848151f9328c1a26b90708a18f6169c591748e93057a1b986cb82a7",
-				"dweb:/ipfs/QmU6aBDadffPTtvP2wcQ2L5heogxVWyomD2AiBpDdMsd3W"
+				"bzz-raw://ae5155ccc7b142bdef5112f9bb14e4e9aeb19dcfb4cb2cc1b0b659101f512555",
+				"dweb:/ipfs/QmR8E95kEaTnmXirkWapGapnB6vp5D3ygkHFGh5c9iH1P5"
 			]
 		}
 	},

@@ -21,7 +21,6 @@ contract stakeXFI{
         uint256 amount;
         uint256 startTime;
         uint256 duration;
-        uint256 reward;
         bool hasWithdraw;
     }
 
@@ -63,13 +62,11 @@ contract stakeXFI{
 
         XFIContract.transferFrom(msg.sender, address(this), _amount);
 
-        uint256 calReward = calculateReward(block.timestamp, _duration, _amount);
 
         Staking memory staking;
         staking.amount = _amount;
         staking.duration = block.timestamp + _duration;
         staking.startTime = block.timestamp;
-        staking.reward = calReward;
 
         stakers[msg.sender].push(staking);
 
@@ -87,11 +84,10 @@ contract stakeXFI{
         require(block.timestamp > staking.duration, "Not yet time");
 
         uint256 amountStaked_ = staking.amount; 
-        uint256 rewardAmount_ = staking.reward; 
+        uint256 rewardAmount_ = calculateReward(block.timestamp, staking.duration, staking.amount); 
 
         staking.hasWithdraw = true;
         staking.amount = 0;
-        staking.reward = 0;
         staking.startTime = 0;
         staking.duration = 0;
 
