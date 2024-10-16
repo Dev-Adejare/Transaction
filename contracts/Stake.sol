@@ -84,7 +84,7 @@ contract stakeXFI{
         require(block.timestamp > staking.duration, "Not yet time");
 
         uint256 amountStaked_ = staking.amount; 
-        uint256 rewardAmount_ = calculateReward(block.timestamp, staking.duration, staking.amount); 
+        uint256 rewardAmount_ = calculateReward(block.timestamp, staking.duration); 
 
         staking.hasWithdraw = true;
         staking.amount = 0;
@@ -137,14 +137,10 @@ contract stakeXFI{
          
     }
 
-    function calculateReward(uint256 _startTime, uint256 _endTime, uint256 _amount) private pure returns(uint256){
+    function calculateReward(uint256 _startTime, uint256 _endTime) private pure returns(uint256){
         uint256 stakeDuration = _endTime - _startTime;
 
-        uint256 rewardPerSecond = _amount / 1000000;  
-
-        return stakeDuration * rewardPerSecond;
-
-
+           return stakeDuration;
     }
  
 }
