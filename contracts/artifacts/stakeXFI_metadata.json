@@ -1,0 +1,80 @@
+{
+	"compiler": {
+		"version": "0.8.27+commit.40a35a09"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "MPXContract",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "XFIContract",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Stake.sol": "stakeXFI"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/IERC20.sol": {
+			"keccak256": "0x9a0141565af3473d6b24c4b104d7c90acd5f0295866d61c8983aeefe6b7437f3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://17fc1d8b286980f6c97758b88dadedc36f3bb404df759531fa95f6c046dd7cca",
+				"dweb:/ipfs/QmRscwyBfaFQaSjLujCkT6cQ7aitUyuMxNLP3pSXA9q3Dm"
+			]
+		},
+		"contracts/Stake.sol": {
+			"keccak256": "0xc8bfb9163978e6f6ea503246c1a63aac5318ec0c89355a71290c8b7f087c7929",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3c460204b5a3e2515565d793f0d8047fb3942a83b73f0c5d7b7b72b961fba800",
+				"dweb:/ipfs/QmUHHBT172WUvweV17UMzwtPfovHBu2t9iLaazZDiYC79C"
+			]
+		}
+	},
+	"version": 1
+}
