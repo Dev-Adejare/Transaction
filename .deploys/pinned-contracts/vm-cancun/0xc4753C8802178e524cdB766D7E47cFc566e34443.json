@@ -1,6 +1,6 @@
 {
-  "name": "XFIToken",
-  "address": "0xB098aE7ddc405A6a6F891693e00c8B9895e1a93f",
+  "name": "MPXToken",
+  "address": "0xc4753C8802178e524cdB766D7E47cFc566e34443",
   "abi": [
     {
       "inputs": [
@@ -445,6 +445,6 @@
       "type": "function"
     }
   ],
-  "filePath": "storage/contracts/XFI.sol",
-  "pinnedAt": 1729079388828
+  "filePath": "storage/contracts/MPX.sol",
+  "pinnedAt": 1729155015877
 }

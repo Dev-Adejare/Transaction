@@ -1,6 +1,6 @@
 {
-  "name": "stakeXFI",
-  "address": "0xF896bB1Da84b8dDE7Ca31D79075B56e51Cdd5582",
+  "name": "StakeXFI",
+  "address": "0xa42b1378D1A84b153eB3e3838aE62870A67a40EA",
   "abi": [
     {
       "inputs": [],
@@ -128,9 +128,9 @@
     {
       "inputs": [
         {
-          "internalType": "uint256",
+          "internalType": "uint8",
           "name": "_index",
-          "type": "uint256"
+          "type": "uint8"
         }
       ],
       "name": "withdrawStake",
@@ -199,11 +199,11 @@
             },
             {
               "internalType": "bool",
-              "name": "hasWithdraw",
+              "name": "hasWithdrawn",
               "type": "bool"
             }
           ],
-          "internalType": "struct stakeXFI.Staking",
+          "internalType": "struct StakeXFI.Staking",
           "name": "",
           "type": "tuple"
         }
@@ -239,5 +239,5 @@
     }
   ],
   "filePath": "storage/contracts/Stake.sol",
-  "pinnedAt": 1729079405666
+  "pinnedAt": 1729155182589
 }
