@@ -18,7 +18,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "constructor"
 			},
 			{
@@ -199,11 +199,11 @@
 	},
 	"sources": {
 		"contracts/MultiSig.sol": {
-			"keccak256": "0x3d98d7b8cb786fe800f9d657f7357208eecfe89b5114fd40d20a01e457bf48ff",
+			"keccak256": "0x8a592b6fedcd440d8c255028e8342c615f96567816f97ee0c05aefaaf1a428a6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5383f9e92393d29ced71f673a04a602ab077d3c86b6af70536979d2c96c350eb",
-				"dweb:/ipfs/QmSfXTuTB6MUbK8YSSRZNyq2LEzYbc8QThxwdzVwvnyHwB"
+				"bzz-raw://37309cbd637ea308006b27a9e06c7f5aa19ff59ca7f3c1ca8bb83eaf47e07091",
+				"dweb:/ipfs/QmRLWs1D1TTzj5oJCZLWPMjUbJAU6rmgcLCgKPfrAQixLj"
 			]
 		}
 	},
