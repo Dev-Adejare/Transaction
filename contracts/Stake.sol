@@ -3,7 +3,7 @@ pragma solidity ^0.8.27;
 
 import "./IERC20.sol";
 
-contract stakeXFI{
+contract StakeXFI{
     IERC20 public XFIContract;
     IERC20 public MPXContract;
 
@@ -12,16 +12,16 @@ contract stakeXFI{
 
     bool internal locked;
 
-    uint256 immutable MINIMUM_STAKE_AMOUNT = 1_000 * (10**18);
-    uint256 immutable MAXIMUM_STAKE_AMOUNT = 100_000 * (10**18);
+    uint256 immutable MINIMUM_STAKE_AMOUNT = 1000 * (10**18);
+    uint256 immutable MAXIMUM_STAKE_AMOUNT = 100000 * (10**18);
 
-    uint32 constant REWARD_PER_SECOND = 1_000_000; //0.000001%
+    uint32 internal constant REWARD_PER_SECOND = 1000000; // 0.000001% 10e11
 
     struct Staking{
         uint256 amount;
         uint256 startTime;
         uint256 duration;
-        bool hasWithdraw;
+        bool hasWithdrawn;
     }
 
     mapping (address => Staking[]) stakers;
@@ -29,11 +29,11 @@ contract stakeXFI{
     constructor(address _xfiAddress, address _mpxAddress){
         XFIContract = IERC20(_xfiAddress);
         MPXContract = IERC20(_mpxAddress);
-        
+
         owner = msg.sender;
     }
 
-    event DepositSuccessful(address indexed staker, uint256 amount, uint256 indexed startTime);
+    event DepositSuccessful(address indexed  staker, uint256 amount, uint256 indexed startTime);
     event WithdrawalSuccessful(address indexed staker, uint256 amount, uint256 indexed reward);
     event OwnershipTransfered(address indexed previousOwner, address indexed newOwner);
 
@@ -42,8 +42,8 @@ contract stakeXFI{
         _;
     }
 
-    modifier reentrancyGuard(){
-        require(!locked, "Not allowed to re_enter");
+    modifier reentrancyGuard() {
+        require(!locked, "Not allowed to re-enter");
         locked = true;
         _;
         locked = false;
@@ -62,7 +62,6 @@ contract stakeXFI{
 
         XFIContract.transferFrom(msg.sender, address(this), _amount);
 
-
         Staking memory staking;
         staking.amount = _amount;
         staking.duration = block.timestamp + _duration;
@@ -71,22 +70,22 @@ contract stakeXFI{
         stakers[msg.sender].push(staking);
 
         emit DepositSuccessful(msg.sender, _amount, block.timestamp);
-    }
+    } 
 
 
-    function withdrawStake(uint256 _index) external reentrancyGuard returns (bool){
+    function withdrawStake(uint8 _index) external reentrancyGuard returns (bool) {
         require(msg.sender != address(0), "Zero address not allowed");
-
         require(_index < stakers[msg.sender].length, "Out of range");
 
         Staking storage staking = stakers[msg.sender][_index];
 
         require(block.timestamp > staking.duration, "Not yet time");
+        require(!staking.hasWithdrawn, "Stake already withdrawn");
 
-        uint256 amountStaked_ = staking.amount; 
-        uint256 rewardAmount_ = calculateReward(block.timestamp, staking.duration); 
+        uint256 amountStaked_ = staking.amount;
+        uint256 rewardAmount_ = calculateReward(staking.startTime, staking.duration);
 
-        staking.hasWithdraw = true;
+        staking.hasWithdrawn = true;
         staking.amount = 0;
         staking.startTime = 0;
         staking.duration = 0;
@@ -94,29 +93,28 @@ contract stakeXFI{
         XFIContract.transfer(msg.sender, amountStaked_);
         MPXContract.transfer(msg.sender, rewardAmount_);
 
-        emit WithdrawalSuccessful((msg.sender), amountStaked_, rewardAmount_);
+        emit WithdrawalSuccessful(msg.sender, amountStaked_, rewardAmount_);
 
         return true;
-
     }
 
-    function getStakerInfo(uint8 _index) external view returns(Staking memory){
+
+    function getStakerInfo(uint8 _index) external view returns (Staking memory){
         require(msg.sender != address(0), "Zero address not allowed");
 
         require(_index < stakers[msg.sender].length, "Out of range");
 
         Staking memory staking = stakers[msg.sender][_index];
         return staking;
-
-    }
-
-    function getContractXFIBalance() external onlyOwner view returns (uint256){
-        uint256 bal = XFIContract.balanceOf(address(this));
-        return bal;
     }
 
     function getContractMPXBalance() external onlyOwner view returns (uint256){
         uint256 bal = MPXContract.balanceOf(address(this));
+        return bal;
+    }
+
+    function getContractXFIBalance() external onlyOwner view returns (uint256){
+        uint256 bal = XFIContract.balanceOf(address(this));
         return bal;
     }
 
@@ -134,13 +132,11 @@ contract stakeXFI{
 
         owner = newOwner;
         newOwner = address(0);
-         
     }
 
-    function calculateReward(uint256 _startTime, uint256 _endTime) private pure returns(uint256){
-        uint256 stakeDuration = _endTime - _startTime;
-
-           return stakeDuration;
+    function calculateReward(uint256 _startTime, uint256 _endTime) private pure returns (uint256){
+    uint256 stakeDuration = _endTime - _startTime;
+    return stakeDuration * REWARD_PER_SECOND;
     }
- 
+
 }
