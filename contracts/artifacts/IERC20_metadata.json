@@ -202,7 +202,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/IERC20.sol": "IERC20"
+			"contracts/ICelo.sol": "IERC20"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -216,7 +216,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/IERC20.sol": {
+		"contracts/ICelo.sol": {
 			"keccak256": "0x9a0141565af3473d6b24c4b104d7c90acd5f0295866d61c8983aeefe6b7437f3",
 			"license": "MIT",
 			"urls": [
