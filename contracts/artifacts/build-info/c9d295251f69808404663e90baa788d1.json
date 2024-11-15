@@ -1,8 +1,8 @@
 {
-	"id": "f37f74f9689cd6f35ebf91a8e28dddb4",
+	"id": "c9d295251f69808404663e90baa788d1",
 	"_format": "hh-sol-build-info-1",
-	"solcVersion": "0.8.28",
-	"solcLongVersion": "0.8.28+commit.7893614a",
+	"solcVersion": "0.8.26",
+	"solcLongVersion": "0.8.26+commit.8a97fa7a",
 	"input": {
 		"language": "Solidity",
 		"sources": {
@@ -56,8 +56,8 @@
 			{
 				"component": "general",
 				"errorCode": "3420",
-				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.28;\"\n--> contracts/Ballot.sol\n\n",
-				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.28;\"",
+				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.26;\"\n--> contracts/Ballot.sol\n\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.26;\"",
 				"severity": "warning",
 				"sourceLocation": {
 					"end": -1,
