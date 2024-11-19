@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.27+commit.40a35a09"
+		"version": "0.8.28+commit.7893614a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -27,6 +27,12 @@
 					}
 				],
 				"name": "TodoCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "TodoDeleted",
 				"type": "event"
 			},
 			{
@@ -257,11 +263,11 @@
 	},
 	"sources": {
 		"contracts/Todo.sol": {
-			"keccak256": "0x42e5e83707bbdbdea61188192ef81e547af8e9c63243015464c9474aa293ee97",
+			"keccak256": "0xf0267eaa8b8ab70395de251a6a01f886c44a8befa5fda0be0c185c2b24d01c4e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0a8a5319871eded4e941d2daf97b67711ad4db11af6aad362af726e4884fcfce",
-				"dweb:/ipfs/Qman9CeS2iinG9qwMKbwjTAEemhdpwWk8aGDWiJyBf3cUr"
+				"bzz-raw://860ebbb991952793e08d5f5737f7744ab957448c4b3d7f7801d497059ac3013a",
+				"dweb:/ipfs/QmRHUGvNzAyrSUKfGXKD4qeAAsRv1rKHsPZ3BC8jsCJqid"
 			]
 		}
 	},

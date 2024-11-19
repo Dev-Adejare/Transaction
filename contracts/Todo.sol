@@ -180,6 +180,7 @@ contract TodoList {
 
     event TodoCreated(string title, Status status);
     event TodoUpdated(string title, Status status);
+    event  TodoDeleted();
 
     function createTodo(string memory _title, string memory _desc) external onlyOwner validAddress  returns (bool){
         Todo memory mytodo;
@@ -233,6 +234,7 @@ contract TodoList {
 
         todos[_index] = todos[todos.length - 1];
         todos.pop();
+        emit TodoDeleted();
 
     }
 }
