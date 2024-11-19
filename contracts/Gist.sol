@@ -1,1 +1,0 @@
-VITE_BASE_RPC_URL=https://base-sepolia.g.alchemy.com/v2/OMehAKF2Q2tb0gYMpd66T2m8zl9AnCzR
