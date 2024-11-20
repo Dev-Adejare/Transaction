@@ -1,6 +1,6 @@
 {
   "name": "TodoList",
-  "address": "0x5530f73a68e1f02bc85707d83c877273e89c7546",
+  "address": "0xcb04d38de80d56667d79d603ac2a178d1581a823",
   "abi": [
     {
       "inputs": [
@@ -233,5 +233,5 @@
     }
   ],
   "filePath": "storage/contracts/Todo.sol",
-  "pinnedAt": 1732005642958
+  "pinnedAt": 1732103356818
 }
