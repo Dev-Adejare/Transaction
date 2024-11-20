@@ -57,7 +57,7 @@ contract TodoList {
 
     } 
 
-    function getTodo(uint8 _index) external view validAddress returns (string memory, string memory, Status){
+    function getTodo(uint8 _index) external view returns (string memory, string memory, Status){
     require(_index < todos.length, "Index is out-of-bound");
 
     Todo memory mytodo = todos[_index];
@@ -65,7 +65,7 @@ contract TodoList {
     }
 
 
-    function getAllTodo() external view validAddress returns (Todo[] memory){
+    function getAllTodo() external view returns (Todo[] memory){
         return todos;
     }
 
