@@ -33,8 +33,11 @@ contract TodoList {
         _;
     }
 
-    event TodoCreated(string title, Status status);
-    event TodoUpdated(string title, Status status);
+    event TodoCreated(string title, string description, Status status);
+    event TodoUpdated(uint8 index, string title, string description, Status status);
+    event TodoCompleted(uint8 index, Status status);
+    event TodoDeleted(uint8 index);
+
     event TodoDeleted();
 
     function createTodo(string memory _title, string memory _desc)

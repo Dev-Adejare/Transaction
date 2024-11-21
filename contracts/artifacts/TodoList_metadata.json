@@ -15,6 +15,25 @@
 				"inputs": [
 					{
 						"indexed": false,
+						"internalType": "uint8",
+						"name": "index",
+						"type": "uint8"
+					},
+					{
+						"indexed": false,
+						"internalType": "enum TodoList.Status",
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"name": "TodoCompleted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
 						"internalType": "string",
 						"name": "title",
 						"type": "string"
@@ -27,6 +46,19 @@
 					}
 				],
 				"name": "TodoCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "index",
+						"type": "uint8"
+					}
+				],
+				"name": "TodoDeleted",
 				"type": "event"
 			},
 			{
@@ -269,11 +301,11 @@
 	},
 	"sources": {
 		"contracts/Todo.sol": {
-			"keccak256": "0x7636867f16d23b45f96bff6855c61fa66dae45b430584c6cda50751c3018e725",
+			"keccak256": "0xe9a7553231cc17a0069c573403e875f0fa08ee3c08ad529c09de1e8ef6032b07",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f132e5e3e39a22745de16aca989b68a155822a9b60fcc8909226069821adc7e2",
-				"dweb:/ipfs/QmaCtex4J6SyutYqdf6KVBZuqiF86rSKmwY8DgPg5GE8xM"
+				"bzz-raw://57d327c094d6fc1835b80b2d9d112bec86fef1ccb48d0d6a2a6335d9f4bc9636",
+				"dweb:/ipfs/Qmb1RqHC4mW16jiSTSvYbPh8TctfUARaT7h3Qg6BtfKi5p"
 			]
 		}
 	},
