@@ -1,6 +1,6 @@
 {
   "name": "TodoList",
-  "address": "0xbcce242abc56f4d6d53159b815b02572fe299938",
+  "address": "0xf6d07df521ef4d603ec967c4b2fa4709ac4fa990",
   "abi": [
     {
       "inputs": [
@@ -117,12 +117,6 @@
           "type": "uint8"
         }
       ],
-      "name": "TodoDeleted",
-      "type": "event"
-    },
-    {
-      "anonymous": false,
-      "inputs": [],
       "name": "TodoDeleted",
       "type": "event"
     },
@@ -289,5 +283,5 @@
     }
   ],
   "filePath": "storage/contracts/Todo.sol",
-  "pinnedAt": 1732182024324
+  "pinnedAt": 1732197841852
 }
