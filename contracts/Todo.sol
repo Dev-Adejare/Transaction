@@ -38,7 +38,6 @@ contract TodoList {
     event TodoCompleted(uint8 index, Status status);
     event TodoDeleted(uint8 index);
 
-    event TodoDeleted();
 
     function createTodo(string memory _title, string memory _desc)
         external

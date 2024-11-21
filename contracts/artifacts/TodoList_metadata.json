@@ -69,12 +69,6 @@
 			},
 			{
 				"anonymous": false,
-				"inputs": [],
-				"name": "TodoDeleted",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
 				"inputs": [
 					{
 						"indexed": false,
@@ -319,11 +313,11 @@
 	},
 	"sources": {
 		"contracts/Todo.sol": {
-			"keccak256": "0xa711486ab1a5f2e932f50439e271d44c11aa692c95ed60d0790fd7a6e7847fc0",
+			"keccak256": "0xae22f79b24c2159e4e45fc0e8b1f2a4569b5891361553abfbfaa3d864e0a634c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ecc48761caef74c795689c46ff1d60e471ffedf1096180e84482aa193b16d37c",
-				"dweb:/ipfs/QmZE5NZHN6Motp1iFXXVxPMMVBtuXGd1CEVQpN3D6FBS8v"
+				"bzz-raw://5bd91171842abc7dcf0a7b649e7d3433cfd689b99f8154b9a891159e87f4fe8f",
+				"dweb:/ipfs/QmUWrYnWwMZDwof8qCx5kfcRToHhHdMXXmMXE63nRX7uPr"
 			]
 		}
 	},
