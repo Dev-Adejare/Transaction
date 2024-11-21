@@ -1,6 +1,6 @@
 {
   "name": "TodoList",
-  "address": "0xc3b28fb42a36571c98f7542453daa730580613e2",
+  "address": "0xbcce242abc56f4d6d53159b815b02572fe299938",
   "abi": [
     {
       "inputs": [
@@ -29,9 +29,9 @@
     {
       "inputs": [
         {
-          "internalType": "uint16",
+          "internalType": "uint8",
           "name": "_index",
-          "type": "uint16"
+          "type": "uint8"
         }
       ],
       "name": "deleteTodo",
@@ -42,12 +42,12 @@
     {
       "inputs": [
         {
-          "internalType": "uint16",
+          "internalType": "uint8",
           "name": "_index",
-          "type": "uint16"
+          "type": "uint8"
         }
       ],
-      "name": "todoComplete",
+      "name": "todoCompleted",
       "outputs": [
         {
           "internalType": "bool",
@@ -68,8 +68,33 @@
       "inputs": [
         {
           "indexed": false,
+          "internalType": "uint8",
+          "name": "index",
+          "type": "uint8"
+        },
+        {
+          "indexed": false,
+          "internalType": "enum TodoList.Status",
+          "name": "status",
+          "type": "uint8"
+        }
+      ],
+      "name": "TodoCompleted",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
           "internalType": "string",
           "name": "title",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "description",
           "type": "string"
         },
         {
@@ -84,6 +109,19 @@
     },
     {
       "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "index",
+          "type": "uint8"
+        }
+      ],
+      "name": "TodoDeleted",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
       "inputs": [],
       "name": "TodoDeleted",
       "type": "event"
@@ -93,8 +131,20 @@
       "inputs": [
         {
           "indexed": false,
+          "internalType": "uint8",
+          "name": "index",
+          "type": "uint8"
+        },
+        {
+          "indexed": false,
           "internalType": "string",
           "name": "title",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "description",
           "type": "string"
         },
         {
@@ -169,9 +219,9 @@
     {
       "inputs": [
         {
-          "internalType": "uint16",
+          "internalType": "uint8",
           "name": "_index",
-          "type": "uint16"
+          "type": "uint8"
         }
       ],
       "name": "getTodo",
@@ -239,5 +289,5 @@
     }
   ],
   "filePath": "storage/contracts/Todo.sol",
-  "pinnedAt": 1732107547406
+  "pinnedAt": 1732182024324
 }
