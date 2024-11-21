@@ -40,6 +40,12 @@
 					},
 					{
 						"indexed": false,
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"indexed": false,
 						"internalType": "enum TodoList.Status",
 						"name": "status",
 						"type": "uint8"
@@ -72,8 +78,20 @@
 				"inputs": [
 					{
 						"indexed": false,
+						"internalType": "uint8",
+						"name": "index",
+						"type": "uint8"
+					},
+					{
+						"indexed": false,
 						"internalType": "string",
 						"name": "title",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "description",
 						"type": "string"
 					},
 					{
@@ -301,11 +319,11 @@
 	},
 	"sources": {
 		"contracts/Todo.sol": {
-			"keccak256": "0xe9a7553231cc17a0069c573403e875f0fa08ee3c08ad529c09de1e8ef6032b07",
+			"keccak256": "0x1a3222a2f9925a3b52142a9adfeeaf1e8f8210dcfa4562dc58f5bb95e64f1e7d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://57d327c094d6fc1835b80b2d9d112bec86fef1ccb48d0d6a2a6335d9f4bc9636",
-				"dweb:/ipfs/Qmb1RqHC4mW16jiSTSvYbPh8TctfUARaT7h3Qg6BtfKi5p"
+				"bzz-raw://83a0b04dff92fdf303b91088865d6f1115eeb3f11f4a14b80f209aef59ed92dd",
+				"dweb:/ipfs/QmR6Q3VyJwFUvhVw8rrJDq9VD3sWePf3wW3a2pFKtj6JiU"
 			]
 		}
 	},

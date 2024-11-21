@@ -53,7 +53,7 @@ contract TodoList {
 
         todos.push(mytodo);
 
-        emit TodoCreated(_title, Status.Created);
+        emit TodoCreated(_title, _desc, Status.Created);
         return true;
     }
 
@@ -69,7 +69,7 @@ contract TodoList {
         mytodo.description = _desc;
         mytodo.status = Status.Edited;
 
-        emit TodoCreated(_title, Status.Edited);
+        emit TodoUpdated( _index, _title, _desc, Status.Edited);
 
         return true;
     }
