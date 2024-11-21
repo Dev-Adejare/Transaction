@@ -62,7 +62,7 @@ contract TodoList {
         string memory _title,
         string memory _desc
     ) external onlyOwner validAddress returns (bool) {
-        require(_index < todos.length, "Out of bound");
+        require(_index < todos.length, "Index is Out_of_bound");
 
         Todo storage mytodo = todos[_index];
         mytodo.title = _title;
@@ -83,7 +83,7 @@ contract TodoList {
             Status
         )
     {
-        require(_index < todos.length, "Out of bound");
+        require(_index < todos.length, "Index is Out_of_bound");
         Todo storage mytodo = todos[_index];
         return (mytodo.title, mytodo.description, mytodo.status);
     }
@@ -93,7 +93,7 @@ contract TodoList {
     }
 
     function deleteTodo(uint16 _index) public {
-        require(_index < todos.length, "Out of bound");
+        require(_index < todos.length, "Index is Out_of_bound");
         todos[_index] = todos[todos.length - 1];
         todos.pop();
 
@@ -106,7 +106,7 @@ contract TodoList {
         validAddress
         returns (bool)
     {
-        require(_index < todos.length, "Out of bound");
+        require(_index < todos.length, "Index is Out_of_bound");
 
         Todo storage mytodo = todos[_index];
 
