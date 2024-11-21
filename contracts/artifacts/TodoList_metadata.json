@@ -131,9 +131,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint16",
+						"internalType": "uint8",
 						"name": "_index",
-						"type": "uint16"
+						"type": "uint8"
 					}
 				],
 				"name": "deleteTodo",
@@ -174,9 +174,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint16",
+						"internalType": "uint8",
 						"name": "_index",
-						"type": "uint16"
+						"type": "uint8"
 					}
 				],
 				"name": "getTodo",
@@ -216,12 +216,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint16",
+						"internalType": "uint8",
 						"name": "_index",
-						"type": "uint16"
+						"type": "uint8"
 					}
 				],
-				"name": "todoComplete",
+				"name": "todoCompleted",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -319,11 +319,11 @@
 	},
 	"sources": {
 		"contracts/Todo.sol": {
-			"keccak256": "0xf419014f0c8d2f84f7cae41a54865df42ea8fe66c9307ee9aedf727a5e8bfeed",
+			"keccak256": "0xa711486ab1a5f2e932f50439e271d44c11aa692c95ed60d0790fd7a6e7847fc0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7ebe3e1fbbc01315bf68a320a5744f9bf414b3ca761067d36b3b17745248177e",
-				"dweb:/ipfs/QmV5RuiXZ7XaaGJJ9HyDHo87GA65fSKCC8Jv5j8L7LssvF"
+				"bzz-raw://ecc48761caef74c795689c46ff1d60e471ffedf1096180e84482aa193b16d37c",
+				"dweb:/ipfs/QmZE5NZHN6Motp1iFXXVxPMMVBtuXGd1CEVQpN3D6FBS8v"
 			]
 		}
 	},

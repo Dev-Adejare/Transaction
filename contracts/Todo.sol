@@ -74,7 +74,7 @@ contract TodoList {
         return true;
     }
 
-    function getTodo(uint16 _index)
+    function getTodo(uint8 _index)
         external
         view
         returns (
@@ -92,15 +92,15 @@ contract TodoList {
         return todos;
     }
 
-    function deleteTodo(uint16 _index) public {
+    function deleteTodo(uint8 _index) public {
         require(_index < todos.length, "Index is Out_of_bound");
         todos[_index] = todos[todos.length - 1];
         todos.pop();
 
-        emit TodoDeleted();
+        emit TodoDeleted(_index);
     }
 
-    function todoComplete(uint16 _index)
+    function todoCompleted(uint8 _index)
         public
         onlyOwner
         validAddress
@@ -111,6 +111,8 @@ contract TodoList {
         Todo storage mytodo = todos[_index];
 
         mytodo.status = Status.Done;
+
+         emit TodoCompleted(_index, Status.Done);
 
         return true;
     }
