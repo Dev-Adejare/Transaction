@@ -33,6 +33,7 @@ contract BuyMeACoffe {
     }
 
     function withdrawTips() external onlyOwner {
-        
+        (bool success,) = owner.call{value: address(this).balance}("");
+        require(success, "Withdrawal Failed");
     }
 }
