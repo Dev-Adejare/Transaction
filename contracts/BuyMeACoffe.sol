@@ -1,9 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
-contract BuyMeACoffe {
-    event NewMemo(address indexed from, uint256 timestamp, string name, uint256 amount,  string message);
 
+contract BuyMeACoffee {
+
+    event NewMemo (address indexed from, uint256 timestamp, string name, uint256 amount, string message);
     struct Memo {
         address from;
         uint256 timestamp;
@@ -12,37 +13,42 @@ contract BuyMeACoffe {
         string message;
     }
 
-    address payable public owner;
+    address payable  public owner;
 
     Memo[] memos;
 
-    modifier onlyOwner(){
-        require(msg.sender == owner, "Not the owner");
+    modifier  onlyOwner () {
+        require(msg.sender == owner, "You are not owner");
         _;
     }
 
+
     constructor() {
-        owner = payable (msg.sender);
+        owner = payable(msg.sender);
     }
 
-    function buyCoffee( string memory _name, string memory _message) public external payable {
+    function buyCoffer(string memory _name,  string memory _message) external  payable {
+
         require(msg.value > 0, "Cannot buy coffee for free!");
+
         memos.push(Memo(msg.sender, block.timestamp, _name, msg.value, _message));
 
         emit NewMemo(msg.sender, block.timestamp, _name, msg.value, _message);
     }
 
-    function withdrawTips() external onlyOwner {
+
+    function withdrawTips() external  onlyOwner {
         (bool success,) = owner.call{value: address(this).balance}("");
-        require(success, "Withdrawal Failed");
+
+        require(success, "Withdrawal failed");
     }
 
-    function changeOwner(address _newOnwer) external onlyOwner {
+    function changeOwner(address _newOwner) external onlyOwner {
+        require(_newOwner != address(0), "Owner cannot be zero address");
         owner = payable (_newOwner);
-        require(_newOwner != address(0), "Owner cannot be zero address")
     }
 
-    function getMemos() external view returns (Memo[] memory) {
+    function getMemos() external  view returns(Memo[] memory) {
         return memos;
     }
 }
