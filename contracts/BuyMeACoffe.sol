@@ -31,4 +31,8 @@ contract BuyMeACoffe {
 
         emit NewMemo(msg.sender, block.timestamp, _name, msg.value, _message);
     }
+
+    function withdrawTips() external onlyOwner {
+        
+    }
 }
