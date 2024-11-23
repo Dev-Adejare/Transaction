@@ -25,7 +25,7 @@ contract BuyMeACoffe {
         owner = payable (msg.sender);
     }
 
-    function buyCoffe( string memory _name, string memory _message) public external payable {
+    function buyCoffee( string memory _name, string memory _message) public external payable {
         require(msg.value > 0, "Cannot buy coffee for free!");
         memos.push(Memo(msg.sender, block.timestamp, _name, msg.value, _message));
 
@@ -35,5 +35,9 @@ contract BuyMeACoffe {
     function withdrawTips() external onlyOwner {
         (bool success,) = owner.call{value: address(this).balance}("");
         require(success, "Withdrawal Failed");
+    }
+
+    function getMemos() external view returns (Memo[] memory) {
+        return memos;
     }
 }
