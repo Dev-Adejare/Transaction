@@ -37,6 +37,11 @@ contract BuyMeACoffe {
         require(success, "Withdrawal Failed");
     }
 
+    function changeOwner(address _newOnwer) external onlyOwner {
+        owner = payable (_newOwner);
+        require(_newOwner != address(0), "Owner cannot be zero address")
+    }
+
     function getMemos() external view returns (Memo[] memory) {
         return memos;
     }
