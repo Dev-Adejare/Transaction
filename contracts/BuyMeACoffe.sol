@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.9;
+pragma solidity ^0.8.9;
 
 contract BuyMeACoffe {
     event NewMemo(address indexed from, uint256 timestamp, string name, uint256 amount,  string message);
