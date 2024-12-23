@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.28+commit.7893614a"
+		"version": "0.8.26+commit.8a97fa7a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -167,11 +167,11 @@
 	},
 	"sources": {
 		"contracts/BuyMeACoffe.sol": {
-			"keccak256": "0x6e5aa7e614de1869a7a08c12be38bf1bf482157d5f16a0be24889bc6cd567fa0",
+			"keccak256": "0xe54471271ceb017ca497f9476e34d23747e20c04042fb7121714584825dbbc4e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://669fb611eba4ca2d4c08e70e1f9a38e878aa830c6eef65ad2144aa59e2e0b2d1",
-				"dweb:/ipfs/QmXXF2KquwNcEFgQ6k8eugW4BSUo3MCbFNEM3ELVvWyCjo"
+				"bzz-raw://6e648ef4b88f42e6ab86ff7d481ff41b049cb42885ca17c844ed2e9a8499a1cb",
+				"dweb:/ipfs/QmPtUYZ6voRaCLxDH4kUF5FuXw7tqhVTUzQbbbPXjjPJSh"
 			]
 		}
 	},
