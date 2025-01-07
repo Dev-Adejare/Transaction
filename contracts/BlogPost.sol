@@ -3,6 +3,7 @@ pragma solidity ^0.8.20;
 
 contract BlogPost {
 
+    
     struct Post {
         uint id;
         address author;
@@ -10,6 +11,7 @@ contract BlogPost {
         uint commentCount;
         uint timestamp;
     }
+    
 
     struct Comment {
         uint id;
