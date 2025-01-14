@@ -10,9 +10,12 @@ contract CeloToken is ERC20, ERC20Burnable, Ownable {
     constructor(address initialOwner)
         ERC20("CeloToken", "CLT")
         Ownable(initialOwner)
-    {}
+    {
+        
+    }
 
     function mint(address to, uint256 amount) public onlyOwner {
         _mint(to, amount);
     }
+
 }
