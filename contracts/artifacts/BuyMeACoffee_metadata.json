@@ -167,11 +167,11 @@
 	},
 	"sources": {
 		"contracts/BuyMeACoffe.sol": {
-			"keccak256": "0xe54471271ceb017ca497f9476e34d23747e20c04042fb7121714584825dbbc4e",
+			"keccak256": "0xbd6e457adaddd228917d3f37ab07cd2bbbd3d2ff7bbc5bfa7769800b6a2376b7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6e648ef4b88f42e6ab86ff7d481ff41b049cb42885ca17c844ed2e9a8499a1cb",
-				"dweb:/ipfs/QmPtUYZ6voRaCLxDH4kUF5FuXw7tqhVTUzQbbbPXjjPJSh"
+				"bzz-raw://9656a70f2c6197a1df935e8b4be833020ab2f39ce9f87e88fe8325984dd62982",
+				"dweb:/ipfs/QmerbwarnyRY6jE4d3LmUj51DDnbYmWJ8QifkmK1nTH3WZ"
 			]
 		}
 	},

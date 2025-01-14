@@ -13,6 +13,7 @@ contract BuyMeACoffee {
         string message;
     }
 
+
     address payable  public owner;
 
     Memo[] memos;
@@ -21,6 +22,7 @@ contract BuyMeACoffee {
         require(msg.sender == owner, "You are not owner");
      _;
     }
+    
 
 
     constructor() {
