@@ -11,6 +11,7 @@ contract BlogPost {
         uint timestamp;
     }
 
+
     struct Comment {
         uint id;
         address commenter;
